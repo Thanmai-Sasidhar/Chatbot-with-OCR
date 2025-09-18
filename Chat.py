@@ -11,8 +11,8 @@ from datetime import datetime
 
 st.set_page_config(page_title="Chat + OCR", page_icon="🤖", layout="wide")
 
-# --- CONFIG ---
-genai.configure(api_key="AIzaSyBN_bOwZpV4qterCrRWiZMclqai6CkZKhQ")  # 🔑 Replace with your API key
+# --- CONFIG (API KEY HIDDEN) ---
+genai.configure(api_key=st.secrets["GEMINI_API_KEY"])  # 🔒 Secure key from secrets.toml
 GEMINI_MODEL = "gemini-1.5-flash"
 OLLAMA_MODEL = "llama3.1:8b"
 
