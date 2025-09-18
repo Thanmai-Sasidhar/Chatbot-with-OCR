@@ -1,0 +1,13 @@
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore environment variables file
+.env
+
+# Ignore storage folder for images/texts
+storage/
+
+# Ignore IDE/editor configs
+.vscode/
+.ipynb_checkpoints/
